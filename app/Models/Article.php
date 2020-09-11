@@ -1,14 +1,17 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Spatie\Feed\Feedable;
 use Spatie\Feed\FeedItem;
 
 class Article extends Model implements Feedable
 {
-    public function toFeedItem()
+    use HasFactory;
+
+    public function toFeedItem(): FeedItem
     {
         return FeedItem::create()
             ->id($this->id)

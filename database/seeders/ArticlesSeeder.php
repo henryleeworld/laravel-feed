@@ -1,5 +1,7 @@
 <?php
+namespace Database\Seeders;
 
+use App\Models\Article;
 use Illuminate\Database\Seeder;
 
 class ArticlesSeeder extends Seeder
@@ -11,6 +13,6 @@ class ArticlesSeeder extends Seeder
      */
     public function run()
     {
-        factory('App\Article', 5)->create();
+        Article::factory()->times(5)->create();
     }
 }

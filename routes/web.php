@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ArticlessController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/articles/{article}', 'ArticlessController@show')
+Route::get('/articles/{article}', [ArticlessController::class, 'show'])
     ->name('articles.show');
 Route::feeds();
