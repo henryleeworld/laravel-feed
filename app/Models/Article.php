@@ -19,7 +19,7 @@ class Article extends Model implements Feedable
             ->summary($this->description)
             ->updated($this->updated_at)
             ->link($this->link)
-            ->author($this->author);
+            ->authorName($this->author);
     }
 
     public static function getFeedItems()

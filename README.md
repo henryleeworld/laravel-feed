@@ -1,4 +1,4 @@
-# Laravel 8 動態饋給
+# Laravel 11 動態饋給
 
 引入 spatie 的 laravel-feed 套件來擴增實作建立動態饋給，動態饋給是由產品清單構成的檔案，會透過不同的屬性群組以獨特的方式定義每一項產品。
 
@@ -26,5 +26,5 @@ $ php artisan migrate --seed
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/c9DUJ0n.png)
+![](https://i.imgur.com/tR3KgzA.png)
 > 如同 HTML 格式，XML 格式會使用標記來定義成群的內容，這些標記通常會用角括號表示，並將項目相關資訊包在當中。
