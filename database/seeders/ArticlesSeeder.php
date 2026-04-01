@@ -7,12 +7,10 @@ use Illuminate\Database\Seeder;
 class ArticlesSeeder extends Seeder
 {
     /**
-     * Run the database seeds.
-     *
-     * @return void
+     * Run the database seeders.
      */
-    public function run()
+    public function run(): void
     {
-        Article::factory()->times(5)->create();
+        Article::factory()->count(5)->create();
     }
 }

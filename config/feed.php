@@ -20,7 +20,7 @@ return [
 
             'title' => 'My feed',
             'description' => 'The description of the feed.',
-            'language' => 'en-US',
+            'language' => 'zh-TW',
 
             /*
              * The image to display for the feed. For Atom feeds, this is displayed as

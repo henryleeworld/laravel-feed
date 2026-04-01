@@ -9,6 +9,7 @@ use Spatie\Feed\FeedItem;
 
 class Article extends Model implements Feedable
 {
+    /** @use HasFactory<\Database\Factories\ArticleFactory> */
     use HasFactory;
 
     public function toFeedItem(): FeedItem
